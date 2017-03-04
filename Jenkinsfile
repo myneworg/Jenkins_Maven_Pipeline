@@ -1,14 +1,8 @@
 node {
-stage 'checkout' 
+stage 'checkout'
 git url: 'https://github.com/myneworg/Jenkins_Maven_Pipeline.git'
 
-def mvnhome = tool ''
-
-
-
-
-
-
-
-
+stage 'build'
+def mvnhome = tool 'M3'
+sh "{mvnhome}/bin/mvn -Dmaven.test.failure.ignore clean package"
 }
