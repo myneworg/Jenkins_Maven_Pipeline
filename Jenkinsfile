@@ -3,7 +3,9 @@
 //echo "Linux_Slave"
 
 node ('Linux_Slave') {
-echo "Triggering on " 
-
+stage 'Create directory' 
+sh "mkdir output"
 
 }
+
+
