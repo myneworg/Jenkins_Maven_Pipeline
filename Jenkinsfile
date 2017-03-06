@@ -4,8 +4,9 @@
 
 node ('Linux_Slave') {
 stage 'Create directory' 
-sh "mkdir output"
+sh "mkdir output3"
 
+git url: 'https://github.com/myneworg/Jenkins_Maven_Pipeline.git'
 }
 
 
