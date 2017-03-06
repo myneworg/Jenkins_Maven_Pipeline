@@ -1,4 +1,4 @@
-node('Windowsslave') {
+node {
 input 'Ready to go?'
 
 
