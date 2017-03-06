@@ -1,9 +1,7 @@
 node('Windowsslave') {
-stage 'checkout'
-git url: 'https://github.com/myneworg/Jenkins_Maven_Pipeline.git'
+input 'Ready to go?'
 
-stage 'build'
-def mvnhome = tool 'Maven_Windows_3'
-#sh "${mvnhome}/bin/mvn clean package"
+
+
 #bat "${mvnhome}\\bin\\mvn clean package"
 }
